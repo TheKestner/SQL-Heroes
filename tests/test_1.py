@@ -1,5 +1,5 @@
 import pytest
 from demo import *
 
-def eazy_test():
+def test_eazy():
     assert True
