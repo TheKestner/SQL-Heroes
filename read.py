@@ -29,3 +29,10 @@ for fakehero in test:
 
 # for hero in heroes:
 #     print(hero[1])
+
+# SELECT heroes.name, relationships.hero2_id, relationship_types.name
+# FROM heroes
+# JOIN relationships
+# ON heroes.id = relationships.hero1_id
+# JOIN relationship_types
+# ON relationship_types.id = relationships.relationship_type_id
