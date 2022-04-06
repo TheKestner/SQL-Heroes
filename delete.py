@@ -1,9 +1,9 @@
 # import sys 
 # sys.path.append(".")
-from connection import delete
+from connection import execute_query
 
 delete_table = """
 DROP TABLE test;
 """
 
-delete(delete_table)
+execute_query(delete_table)
