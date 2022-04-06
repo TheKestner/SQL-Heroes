@@ -31,3 +31,11 @@ Tacking that on at the end makes it so you can return only the hero with that ab
 -- JOIN relationship_types
 -- ON relationships.relationship_type_id = relationship_types.id 
 -- failed attempt to show both relationships joined together 
+
+-- SELECT heroes.name, relationship_types.name
+-- FROM relationships
+-- JOIN heroes
+-- ON relationships.hero1_id  = heroes.id or relationships.hero2_id = heroes.id
+-- JOIN relationship_types
+-- ON relationships.relationship_type_id = relationship_types.id 
+
