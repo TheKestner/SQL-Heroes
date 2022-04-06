@@ -19,11 +19,15 @@
 # JOIN ability_types
 # ON abilities.ability_type_id = ability_types.id
 
-
-
-
-
-
 WHERE ability_types.name= 'Telepathy'
 
 Tacking that on at the end makes it so you can return only the hero with that ability.
+
+
+-- SELECT heroes.name, relationship_types.name
+-- FROM heroes
+-- JOIN relationships
+-- ON heroes.id = relationships.hero1_id 
+-- JOIN relationship_types
+-- ON relationships.relationship_type_id = relationship_types.id 
+-- failed attempt to show both relationships joined together 
