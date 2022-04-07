@@ -1,25 +1,55 @@
 # This is why you'll execute a series of SQL statements during demo day.
-from connection import execute_query, delete
+from connection import execute_query
+from create import create_hero
 
-# select_heroes = """
+# gather_heroes = """
 #     SELECT * FROM heroes
-#     ORDER BY id DESC 
+#     ORDER BY id 
 # """
 
-# heroes = execute_query(select_heroes).fetchall()
+# heroes = execute_query(gather_heroes).fetchall()
 # for hero in heroes:
 #     print(hero[1])
 
-# create_table = """ 
-# CREATE TABLE test (
-#     fake_id INT PRIMARY KEY generated always as identity,
-#     fakehero VARCHAR(50) UNIQUE NOT NULL
+# INSERT INTO
+#     heroes (name, about_me, biography)
+# VALUES
+#     (
+#         'The DoorMan',
+#         'Just a Door...Literally.',
+#         'Not much to say about a Door'
 #     );
-# """
 
-# execute_query(create_table)
+# def get_it():
+#     gather_heroes = """
+#     SELECT * FROM heroes
+#     ORDER BY id
+#     """
+#     heroes = execute_query(gather_heroes).fetchall()
+#     for hero in heroes:
+#         print("Here is your current heroes:", hero[1])
+# get_it()
 
-# delete_table = """
-# DROP TABLE test;
-# """
-# delete(delete_table)
+
+name = input("What is your Hero name? ")
+about = input("Tell us about yourself: ")
+bio = input("Copy and paste your bio from the internet: ")
+create_hero(name, about, bio)
+
+
+
+
+
+# u = input("What is your Heroes ablility? ")
+# print("Your ability is now", u+"!")
+
+
+
+
+
+
+
+# d = input("Do you want to delete ALL heroes? Either y/n: ")
+# print("oh no, Heroes no longer exist")
+
+## delete all heroes sql
