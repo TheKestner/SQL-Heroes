@@ -21,6 +21,13 @@ name = input("What is your Hero name? ")
 about = input("Tell us about yourself: ")
 bio = input("Copy and paste your bio from the internet: ")
 create_hero(name, about, bio)
+uname = input("You call that a SuperHero name? Wanna update it? ")
+
+# uabout = input("While your at it... Wanna update the about? ")
+# ubio = input("")
+
+
+# delete = input("Do you want to enter the Danger Zone?" ) 
 
 
 

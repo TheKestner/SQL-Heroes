@@ -2,11 +2,11 @@
 # sys.path.append(".")
 from connection import execute_query
 
-# delete_table = """
-# DROP TABLE test;
-# """
-
-# execute_query(delete_table)
+# def danger_zone():
+#     delete_table = """
+#     DROP TABLE test;
+#     """
+#     execute_query(delete_table)
 
 # """ SELECT
 #   'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
