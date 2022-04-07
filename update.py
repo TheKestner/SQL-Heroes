@@ -16,13 +16,13 @@ from connection import execute_query
 # execute_query(update_heroes)
 
 
-def create_hero(name, about, bio):
-    your_hero = """
-     INSERT INTO heroes (name, about_me, biography)
-     VALUES (%s, %s, %s);
-     """ 
-    heroes = execute_query(your_hero, (name, about, bio))
-    print("Welcome,", name+"!")
+# def create_hero(name, about, bio):
+#     your_hero = """
+#      INSERT INTO heroes (name, about_me, biography)
+#      VALUES (%s, %s, %s);
+#      """ 
+#     heroes = execute_query(your_hero, (name, about, bio))
+#     print("Welcome,", name+"!")
 
 # def update_hero(name,):
 #     changed_hero = """

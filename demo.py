@@ -5,43 +5,24 @@ from read import get_it
 
 
 
-
-# def get_it():
-#     gather_heroes = """
-#     SELECT * FROM heroes
-#     ORDER BY id
-#     """
-#     heroes = execute_query(gather_heroes).fetchall()
-#     for hero in heroes:
-#         print("Here is your current heroes:", hero[1])
-
 get_it()
 
 name = input("What is your Hero name? ")
 about = input("Tell us about yourself: ")
 bio = input("Copy and paste your bio from the internet: ")
 create_hero(name, about, bio)
-uname = input("You call that a SuperHero name? Wanna update it? ")
 
+
+
+
+
+
+# uname = input("You call that a SuperHero name? Wanna update it? ")
 # uabout = input("While your at it... Wanna update the about? ")
 # ubio = input("")
 
 
 # delete = input("Do you want to enter the Danger Zone?" ) 
-
-
-
-
-
-# u = input("What is your Heroes ablility? ")
-# print("Your ability is now", u+"!")
-
-
-
-
-
-
-
 # d = input("Do you want to delete ALL heroes? Either y/n: ")
 # print("oh no, Heroes no longer exist")
 

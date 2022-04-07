@@ -8,6 +8,13 @@ from connection import execute_query
 #     """
 #     execute_query(delete_table)
 
+
+
+
+
+
+
+# may be a way to delete all tables at once
 # """ SELECT
 #   'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
 # from
