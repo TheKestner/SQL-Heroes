@@ -1,21 +1,22 @@
 from connection import execute_query
 
-# select_heroes = """
-#     SELECT * FROM heroes
-#     ORDER BY id DESC 
-# """
 
-# heroes = execute_query(select_heroes)
-# for hero in heroes:
-#     print(hero[1])
+def get_it():
+    gather_heroes = """
+    SELECT * FROM heroes
+    ORDER BY id
+    """
+    heroes = execute_query(gather_heroes).fetchall()
+    for hero in heroes:
+        print("Here is the current heroes:", hero[1])
 
-select_heroes = """
-    SELECT * FROM test
-"""
 
-test = execute_query(select_heroes)
-for fakehero in test:
-    print(fakehero[1])
+
+
+
+
+
+
 
 
 # join_heroes = """

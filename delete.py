@@ -12,3 +12,5 @@ from connection import execute_query
 #   'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
 # from
 #   pg_tables WHERE schemaname = 'public';"""
+
+
