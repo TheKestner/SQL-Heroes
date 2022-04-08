@@ -1,7 +1,7 @@
 from connection import execute_query
 from create import create_hero
 from read import get_it, what_is
-from delete import hero_delete
+from delete import hero_delete, danger_zone
 
 # lets get it superhero
 
