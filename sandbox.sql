@@ -10,7 +10,7 @@
 -- # delete_table = """
 -- # DROP TABLE test;
 -- # """
--- # delete(delete_table)
+-- # execute_query(delete_table)
 
 -- # def get_it():
 -- #     gather_heroes = """
@@ -36,4 +36,15 @@
 -- ON relationship_types.id = relationships.relationship_type_id
 -- JOIN heroes h2 
 -- ON h2.id = relationships.hero2_id
+
+
+
+
+-- def update_hero(name,):
+--     changed_hero = """
+--     UPDATE heroes
+--     SET name
+--     WHERE name = %s;
+--     """
+--     heroes = execute_query(changed_hero, ())
 
