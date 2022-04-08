@@ -7,7 +7,7 @@ from connection import execute_query
 #     DROP TABLE test;
 #     """
 #     execute_query(delete_table)
-
+#danger_zone()
 
 
 
@@ -15,9 +15,11 @@ from connection import execute_query
 
 
 # may be a way to delete all tables at once
-# """ SELECT
+# danger_zone = """ 
+# SELECT
 #   'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
-# from
-#   pg_tables WHERE schemaname = 'public';"""
+# FROM
+#   pg_tables WHERE schemaname = 'public'; """
+#   execute_query(danger_zone)
 
 
