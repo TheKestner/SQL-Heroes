@@ -3,7 +3,7 @@
 from connection import execute_query
 
 
-# execute_query(create_table) WORKS WITH INPUT
+#  WORKS WITH INPUT to create hero
 def create_hero(name, about, bio):
     your_hero = """
      INSERT INTO heroes (name, about_me, biography)

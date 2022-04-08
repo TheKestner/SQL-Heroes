@@ -1,16 +1,25 @@
-# This is why you'll execute a series of SQL statements during demo day.
 from connection import execute_query
 from create import create_hero
 from read import get_it
 
 
+# lets get it superhero
 
 get_it()
+
+# lets you create your superhero via terminal input
 
 name = input("What is your Hero name? ")
 about = input("Tell us about yourself: ")
 bio = input("Copy and paste your bio from the internet: ")
 create_hero(name, about, bio)
+
+
+
+
+
+
+
 
 
 
