@@ -11,26 +11,26 @@ def get_it():
         print("Here is the current heroes:", hero[1])
 
 
-# def what_is_love():
-#     baby_dont_hurt_me = """
-#     SELECT heroes.name as Hero1, relationship_types.name as Relationship, h2.name as Hero2
-#     FROM heroes
-#     JOIN relationships
-#     ON heroes.id = relationships.hero1_id
-#     JOIN relationship_types
-#     ON relationship_types.id = relationships.relationship_type_id
-#     JOIN heroes h2 
-#     ON h2.id = relationships.hero2_id
-#     """
-#     heroes = execute_query(baby_dont_hurt_me).fetchall()
-#     for Hero1 in heroes:
-#         print("Heroes 1: ", Hero1[0])
-#     for Relationship in heroes:
-#         print("Relationship Status: ", Relationship[1])
-#     for Hero2 in heroes:
-#         print("Hero 2: ", Hero2[1])
+def what_is_love():
+    baby_dont_hurt_me = """
+    SELECT heroes.name as Hero1, relationship_types.name as Relationship, h2.name as Hero2
+    FROM heroes
+    JOIN relationships
+    ON heroes.id = relationships.hero1_id
+    JOIN relationship_types
+    ON relationship_types.id = relationships.relationship_type_id
+    JOIN heroes h2 
+    ON h2.id = relationships.hero2_id
+    """
+    heroes = execute_query(baby_dont_hurt_me).fetchall()
+    for Hero1 in heroes:
+        print("Heroes 1: ", Hero1[0])
+    for Relationship in heroes:
+        print("Relationship Status: ", Relationship[1])
+    for Hero2 in heroes:
+        print("Hero 2: ", Hero2[2])
 
-# what_is_love()
+what_is_love()
 
 
 
