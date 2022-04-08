@@ -9,7 +9,7 @@ def create_hero(name, about, bio):
      INSERT INTO heroes (name, about_me, biography)
      VALUES (%s, %s, %s);
      """ 
-    heroes = execute_query(your_hero, (name, about, bio))
+    execute_query(your_hero, (name, about, bio))
     print("Welcome,", name+"!")
 
 

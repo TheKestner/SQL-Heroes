@@ -10,6 +10,13 @@ from connection import execute_query
 #danger_zone()
 
 
+def hero_delete(delete):
+    hero_delete = """
+    DELETE FROM heroes
+    WHERE name = (%s)
+    """
+    execute_query(hero_delete, (delete,))
+
 
 
 

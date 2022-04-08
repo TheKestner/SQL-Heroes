@@ -1,7 +1,7 @@
 from connection import execute_query
 from create import create_hero
 from read import get_it, what_is
-
+from delete import hero_delete
 
 # lets get it superhero
 
@@ -27,17 +27,27 @@ def what_is_love():
         print('No Love')        
 what_is_love()
 
+#destroy hero
+def destroy_hero():
+    delete = input("Do you want to destory a hero? Enter name or no: ")
+    if delete == 'no':
+        print('Good Job! You are acting like a real hero.')
+    else:
+        hero_delete(delete)
+        print("Wow, you actually did it..")
+destroy_hero()
+
 
 # Attempt a delete all 
 def drop_like_its_hot():
-    status = input("Do you want to be worse than Thanos? Yes or No: ")
+    delete = input("Do you want to be worse than Thanos? Yes or No: ")
     find = status.lower()
     if find == 'yes':
         danger_zone()
         print('Good Bye World')
     elif find == 'no':
         print('Good Job! The World is still safe.')
-drop_like_its_hot()
+# drop_like_its_hot()
 
 
 

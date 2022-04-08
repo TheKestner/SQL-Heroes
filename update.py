@@ -22,14 +22,8 @@ update_hero()
 
 
 
-# def update_hero():
-#     changed_hero = """
-#     UPDATE test
-#     SET fakehero = 'MANFAKE'
-#     WHERE fakehero = 'FAKEMAN'
-# """
-#     execute_query(changed_hero)
-# update_hero()
+
+
 
 
 # def update_hero(name,):
