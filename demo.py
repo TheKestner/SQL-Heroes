@@ -60,16 +60,12 @@ def drop_like_its_hot():
 
 
 
-
-
-
-# uname = input("You call that a SuperHero name? Wanna update it? ")
-# uabout = input("While your at it... Wanna update the about? ")
-# ubio = input("")
-
-
-# delete = input("Do you want to enter the Danger Zone?" ) 
-# d = input("Do you want to delete ALL heroes? Either y/n: ")
-# print("oh no, Heroes no longer exist")
-
-## delete all heroes sql
+# update name option
+# need to check current names with name entered
+# def update_name():
+#     update = input("You call that a SuperHero name? Wanna update it? Enter name or no ")
+#     if update == 'no':
+#         print("Enjoy having the same name!")
+#     else:
+#         update_hero()
+#         print("Congrats on the new name!")
