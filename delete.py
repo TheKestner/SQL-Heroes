@@ -23,3 +23,7 @@ from connection import execute_query
 #   execute_query(danger_zone)
 
 
+# gotta_delete = """
+# DELETE FROM heroes
+# WHERE id = 1; """
+# execute_query(gotta_delete)
