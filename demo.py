@@ -3,7 +3,7 @@ from create import create_hero
 from read import get_it, what_is
 from delete import hero_delete, danger_zone
 
-# lets get it superhero
+# lets get it superheroes
 
 get_it()
 
