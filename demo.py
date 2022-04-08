@@ -1,47 +1,45 @@
-# This is why you'll execute a series of SQL statements during demo day.
 from connection import execute_query
 from create import create_hero
-from read import get_it
+from read import get_it, what_is
 
 
-
-
-# def get_it():
-#     gather_heroes = """
-#     SELECT * FROM heroes
-#     ORDER BY id
-#     """
-#     heroes = execute_query(gather_heroes).fetchall()
-#     for hero in heroes:
-#         print("Here is your current heroes:", hero[1])
+# lets get it superhero
 
 get_it()
+
+
+# lets you create your superhero via terminal input
 
 name = input("What is your Hero name? ")
 about = input("Tell us about yourself: ")
 bio = input("Copy and paste your bio from the internet: ")
 create_hero(name, about, bio)
-uname = input("You call that a SuperHero name? Wanna update it? ")
 
+
+
+# lets you find relationships between heroes
+def what_is_love():
+    status = input("Do you want to find love? Yes or No: ")
+    find = status.lower()
+    if find == 'yes':
+        what_is()
+    elif find == 'no':
+        print('No Love')        
+what_is_love()
+
+
+
+
+
+
+
+
+# uname = input("You call that a SuperHero name? Wanna update it? ")
 # uabout = input("While your at it... Wanna update the about? ")
 # ubio = input("")
 
 
 # delete = input("Do you want to enter the Danger Zone?" ) 
-
-
-
-
-
-# u = input("What is your Heroes ablility? ")
-# print("Your ability is now", u+"!")
-
-
-
-
-
-
-
 # d = input("Do you want to delete ALL heroes? Either y/n: ")
 # print("oh no, Heroes no longer exist")
 

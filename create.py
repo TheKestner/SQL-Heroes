@@ -3,14 +3,7 @@
 from connection import execute_query
 
 
-# create_table = """ 
-# CREATE TABLE test (
-#     fake_id INT PRIMARY KEY generated always as identity,
-#     fakehero VARCHAR(50) UNIQUE NOT NULL
-#     );
-# """
-
-# execute_query(create_table) WORKS WITH INPUT
+#  WORKS WITH INPUT to create hero
 def create_hero(name, about, bio):
     your_hero = """
      INSERT INTO heroes (name, about_me, biography)
@@ -20,13 +13,18 @@ def create_hero(name, about, bio):
     print("Welcome,", name+"!")
 
 
-# def create_hero(name,):
-#     """
-#      INSERT INTO
-#      heroes (name, about_me, biography)
-#      VALUES
-#         (
-#             'The test',
-#             'Just a Door...Literally.',
-#             'Not much to say about a Door'
-#         ); ""
+
+
+
+
+
+
+
+
+# create_table = """ 
+# CREATE TABLE test (
+#     fake_id INT PRIMARY KEY generated always as identity,
+#     fakehero VARCHAR(50) UNIQUE NOT NULL
+#     );
+# """
+

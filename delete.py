@@ -7,10 +7,23 @@ from connection import execute_query
 #     DROP TABLE test;
 #     """
 #     execute_query(delete_table)
+#danger_zone()
 
-# """ SELECT
+
+
+
+
+
+# may be a way to delete all tables at once
+# danger_zone = """ 
+# SELECT
 #   'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
-# from
-#   pg_tables WHERE schemaname = 'public';"""
+# FROM
+#   pg_tables WHERE schemaname = 'public'; """
+#   execute_query(danger_zone)
 
 
+# gotta_delete = """
+# DELETE FROM heroes
+# WHERE id = 1; """
+# execute_query(gotta_delete)
