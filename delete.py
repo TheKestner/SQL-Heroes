@@ -15,12 +15,13 @@ from connection import execute_query
 
 
 # may be a way to delete all tables at once
-# danger_zone = """ 
-# SELECT
-#   'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
-# FROM
-#   pg_tables WHERE schemaname = 'public'; """
-#   execute_query(danger_zone)
+def danger_zone():
+    #danger_zone = """ 
+#    SELECT
+#     'DROP TABLE IF EXISTS "' || tablename || '" CASCADE;' 
+#    FROM
+#     pg_tables WHERE schemaname = 'public'; """
+#    execute_query(danger_zone)
 
 
 # gotta_delete = """

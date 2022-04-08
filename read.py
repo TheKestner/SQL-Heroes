@@ -39,7 +39,6 @@ def what_is():
 
 
 
-
 # join_heroes = """
 #     SELECT heroes.name, relationship_types.name
 #     FROM heroes

@@ -5,27 +5,39 @@ from read import get_it, what_is
 
 # lets get it superhero
 
-get_it()
+# get_it()
 
 
 # lets you create your superhero via terminal input
 
-name = input("What is your Hero name? ")
-about = input("Tell us about yourself: ")
-bio = input("Copy and paste your bio from the internet: ")
-create_hero(name, about, bio)
+# name = input("What is your Hero name? ")
+# about = input("Tell us about yourself: ")
+# bio = input("Copy and paste your bio from the internet: ")
+# create_hero(name, about, bio)
 
 
 
 # lets you find relationships between heroes
-def what_is_love():
-    status = input("Do you want to find love? Yes or No: ")
+# def what_is_love():
+#     status = input("Do you want to find love? Yes or No: ")
+#     find = status.lower()
+#     if find == 'yes':
+#         what_is()
+#     elif find == 'no':
+#         print('No Love')        
+# what_is_love()
+
+
+# Attempt a delete all 
+def drop_like_its_hot():
+    status = input("Do you want to be worse than Thanos? Yes or No: ")
     find = status.lower()
     if find == 'yes':
-        what_is()
+        danger_zone()
+        print('Good Bye World')
     elif find == 'no':
-        print('No Love')        
-what_is_love()
+        print('Good Job! The World is still safe.')
+drop_like_its_hot()
 
 
 
