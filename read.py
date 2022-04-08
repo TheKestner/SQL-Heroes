@@ -23,13 +23,8 @@ def what_is_love():
     ON h2.id = relationships.hero2_id
     """
     heroes = execute_query(baby_dont_hurt_me).fetchall()
-    for Hero1 in heroes:
-        print("Heroes 1: ", Hero1[0])
-    for Relationship in heroes:
-        print("Relationship Status: ", Relationship[1])
-    for Hero2 in heroes:
-        print("Hero 2: ", Hero2[2])
-
+    for hero in heroes:
+        print("Heroes 1:",hero[0], "|| Relationship Status:",hero[1], "|| Hero 2:",  hero[2])
 what_is_love()
 
 
