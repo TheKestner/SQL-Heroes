@@ -27,6 +27,7 @@ def what_is_love():
         print('No Love')        
 what_is_love()
 
+
 #destroy hero
 def destroy_hero():
     delete = input("Do you want to destory a hero? Enter name or no: ")
@@ -48,6 +49,12 @@ def drop_like_its_hot():
     elif find == 'no':
         print('Good Job! The World is still safe.')
 # drop_like_its_hot()
+
+
+
+
+
+
 
 
 
